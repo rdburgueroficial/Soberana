@@ -1,368 +1,381 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PASSE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PASSE</title>
 
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:
-    radial-gradient(circle at 50% 0%,#2a1850 0%,#0d0819 45%,#04030a 100%);
-  color:white;
-  min-height:100vh;
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 50% 0%, #2a1850 0%, #0d0819 45%, #04030a 100%);
+      color: white;
+      min-height: 100vh;
+    }
 
-.site{
-  width:100%;
-  max-width:1100px;
-  margin:auto;
-  padding:20px 15px 35px;
-}
+    .site {
+      width: 100%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px 15px 35px;
+    }
 
-header{
-  text-align:center;
-  padding:15px 0 40px;
-}
+    header {
+      text-align: center;
+      padding: 15px 0 40px;
+    }
 
-.logo{
-  font-size:30px;
-  font-weight:900;
-  letter-spacing:6px;
-}
+    .logo {
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: 6px;
+    }
 
-.logo span{
-  color:#ffd84d;
-}
+    .logo span {
+      color: #ffd84d;
+    }
 
-.hero{
-  text-align:center;
-}
+    .hero {
+      text-align: center;
+    }
 
-.tag{
-  display:inline-block;
-  color:#ffd84d;
-  border:1px solid rgba(255,216,77,.5);
-  background:rgba(255,216,77,.07);
-  padding:8px 18px;
-  border-radius:50px;
-  font-size:12px;
-  font-weight:bold;
-  letter-spacing:1px;
-  margin-bottom:20px;
-}
+    .tag {
+      display: inline-block;
+      color: #ffd84d;
+      border: 1px solid rgba(255, 216, 77, .5);
+      background: rgba(255, 216, 77, .07);
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
 
-h1{
-  font-size:clamp(50px,12vw,90px);
-  line-height:.9;
-  letter-spacing:-4px;
-  margin-bottom:18px;
-  font-weight:1000;
-}
+    h1 {
+      font-size: clamp(50px, 12vw, 90px);
+      line-height: .9;
+      letter-spacing: -4px;
+      margin-bottom: 18px;
+      font-weight: 1000;
+    }
 
-h1 span{
-  color:#ffd84d;
-}
+    h1 span {
+      color: #ffd84d;
+    }
 
-.description{
-  max-width:650px;
-  margin:0 auto 30px;
-  color:#bbb6c9;
-  font-size:16px;
-  line-height:1.6;
-}
+    .description {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      color: #bbb6c9;
+      font-size: 16px;
+      line-height: 1.6;
+    }
 
-/* PRIMEIRA FOTO */
+    /* FOTO DO PASSE */
 
-.photo{
-  width:100%;
-  max-width:850px;
-  margin:0 auto 35px;
-  padding:6px;
-  border-radius:24px;
-  background:linear-gradient(135deg,#ffd84d,#7b4dff,#ffd84d);
-  box-shadow:0 20px 70px rgba(0,0,0,.5);
-}
+    .photo {
+      width: 100%;
+      max-width: 850px;
+      margin: 0 auto 35px;
+      padding: 6px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #ffd84d, #7b4dff, #ffd84d);
+      box-shadow: 0 20px 70px rgba(0,0,0,.5);
+    }
 
-.photo img{
-  width:100%;
-  display:block;
-  border-radius:18px;
-}
+    .photo img {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+    }
 
-/* LIKES */
+    /* LIKES */
 
-.likes-section{
-  width:100%;
-  max-width:850px;
-  margin:0 auto 30px;
-  padding:30px 20px;
-  border-radius:25px;
-  background:rgba(255,255,255,.055);
-  border:1px solid rgba(255,255,255,.12);
-  box-shadow:0 15px 50px rgba(0,0,0,.35);
-}
+    .likes-section {
+      width: 100%;
+      max-width: 850px;
+      margin: 0 auto 30px;
+      padding: 30px 20px;
+      border-radius: 25px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 15px 50px rgba(0,0,0,.35);
+    }
 
-.likes-title{
-  font-size:38px;
-  font-weight:1000;
-  color:#ff31f5;
-  text-transform:uppercase;
-  margin-bottom:10px;
-  text-shadow:0 0 20px rgba(255,0,255,.3);
-}
+    .likes-title {
+      font-size: 38px;
+      font-weight: 1000;
+      color: #ff31f5;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      text-shadow: 0 0 20px rgba(255,0,255,.3);
+    }
 
-.likes-subtitle{
-  font-size:22px;
-  font-weight:800;
-  color:white;
-}
+    .likes-subtitle {
+      font-size: 22px;
+      font-weight: 800;
+      color: white;
+    }
 
-.likes-subtitle span{
-  color:#ff31f5;
-}
+    .likes-subtitle span {
+      color: #ff31f5;
+    }
 
-/* SEGUNDA FOTO */
+    /* FOTO DOS LIKES */
 
-.likes-photo{
-  width:100%;
-  max-width:850px;
-  margin:0 auto 35px;
-  padding:5px;
-  border-radius:22px;
-  background:linear-gradient(135deg,#a900ff,#ff19e6,#6d00ff);
-  box-shadow:
-    0 0 35px rgba(191,0,255,.25),
-    0 20px 60px rgba(0,0,0,.5);
-}
+    .likes-photo {
+      width: 100%;
+      max-width: 850px;
+      margin: 0 auto 35px;
+      padding: 5px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #a900ff, #ff19e6, #6d00ff);
+      box-shadow:
+        0 0 35px rgba(191,0,255,.25),
+        0 20px 60px rgba(0,0,0,.5);
+    }
 
-.likes-photo img{
-  width:100%;
-  display:block;
-  border-radius:17px;
-}
+    .likes-photo img {
+      width: 100%;
+      display: block;
+      border-radius: 17px;
+    }
 
-/* CARD */
+    /* CARD DE COMPRA */
 
-.card{
-  width:100%;
-  max-width:500px;
-  margin:0 auto;
-  padding:30px 22px;
-  border-radius:25px;
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.12);
-  backdrop-filter:blur(12px);
-}
+    .card {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 30px 22px;
+      border-radius: 25px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(12px);
+    }
 
-.card h2{
-  font-size:27px;
-  margin-bottom:10px;
-}
+    .card h2 {
+      font-size: 27px;
+      margin-bottom: 10px;
+    }
 
-.card p{
-  color:#aaa5b8;
-  line-height:1.5;
-  margin-bottom:20px;
-}
+    .card p {
+      color: #aaa5b8;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
 
-.price{
-  font-size:40px;
-  font-weight:900;
-  color:#ffd84d;
-  margin-bottom:22px;
-}
+    .price {
+      font-size: 40px;
+      font-weight: 900;
+      color: #ffd84d;
+      margin-bottom: 22px;
+    }
 
-/* BOTÃO */
+    /* BOTÃO WHATSAPP */
 
-.buy-button{
-  width:100%;
-  min-height:58px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  border-radius:15px;
-  background:#ffd84d;
-  color:#09070e;
-  text-decoration:none;
-  font-size:18px;
-  font-weight:900;
-  transition:.25s;
-  box-shadow:0 10px 30px rgba(255,216,77,.2);
-}
+    .buy-button {
+      width: 100%;
+      min-height: 58px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      background: #ffd84d;
+      color: #09070e;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 900;
+      transition: .25s;
+      box-shadow: 0 10px 30px rgba(255,216,77,.2);
+    }
 
-.buy-button:hover{
-  transform:translateY(-3px);
-  box-shadow:0 15px 40px rgba(255,216,77,.35);
-}
+    .buy-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(255,216,77,.35);
+    }
 
-.secure{
-  margin-top:15px;
-  color:#777182;
-  font-size:12px;
-}
+    .buy-button:active {
+      transform: scale(.98);
+    }
 
-/* RODAPÉ */
+    .secure {
+      margin-top: 15px;
+      color: #777182;
+      font-size: 12px;
+    }
 
-footer{
-  text-align:center;
-  color:#575261;
-  font-size:12px;
-  margin-top:40px;
-}
+    /* RODAPÉ */
 
-.instagram{
-  display:block;
-  margin-top:8px;
-  color:#555060;
-  font-size:10px;
-  text-decoration:none;
-}
+    footer {
+      text-align: center;
+      color: #575261;
+      font-size: 12px;
+      margin-top: 40px;
+    }
 
-@media(max-width:600px){
+    .instagram {
+      display: block;
+      margin-top: 8px;
+      color: #555060;
+      font-size: 10px;
+      text-decoration: none;
+    }
 
-  .site{
-    padding:18px 12px 35px;
-  }
+    @media (max-width: 600px) {
 
-  .logo{
-    font-size:25px;
-  }
+      .site {
+        padding: 18px 12px 35px;
+      }
 
-  h1{
-    font-size:58px;
-  }
+      .logo {
+        font-size: 25px;
+      }
 
-  .description{
-    font-size:15px;
-  }
+      h1 {
+        font-size: 58px;
+      }
 
-  .likes-title{
-    font-size:32px;
-  }
+      .description {
+        font-size: 15px;
+      }
 
-  .likes-subtitle{
-    font-size:18px;
-  }
+      .likes-title {
+        font-size: 32px;
+      }
 
-  .photo,
-  .likes-photo{
-    padding:4px;
-    border-radius:18px;
-  }
+      .likes-subtitle {
+        font-size: 18px;
+      }
 
-  .photo img,
-  .likes-photo img{
-    border-radius:14px;
-  }
+      .photo,
+      .likes-photo {
+        padding: 4px;
+        border-radius: 18px;
+      }
 
-  .card{
-    padding:25px 18px;
-  }
-}
-</style>
+      .photo img,
+      .likes-photo img {
+        border-radius: 14px;
+      }
+
+      .card {
+        padding: 25px 18px;
+      }
+
+      .price {
+        font-size: 36px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="site">
+  <div class="site">
 
-<header>
-  <div class="logo">
-    PASSE<span>.</span>
+    <header>
+      <div class="logo">
+        PASSE<span>.</span>
+      </div>
+    </header>
+
+    <main class="hero">
+
+      <div class="tag">
+        ACESSO EXCLUSIVO
+      </div>
+
+      <h1>
+        SEU<br>
+        <span>PASSE.</span>
+      </h1>
+
+      <p class="description">
+        Tenha acesso ao PASSE de forma rápida e simples.
+        Escolha sua opção e fale diretamente comigo.
+      </p>
+
+      <!-- FOTO DO PASSE -->
+      <div class="photo">
+        <img src="passe-booyah.png" alt="PASSE">
+      </div>
+
+      <!-- LIKES -->
+      <section class="likes-section">
+
+        <div class="likes-title">
+          LIKES
+        </div>
+
+        <div class="likes-subtitle">
+          FF de <span>100 a 220</span> por dia
+        </div>
+
+      </section>
+
+      <!-- FOTO DOS LIKES -->
+      <div class="likes-photo">
+        <img
+          src="IMG-20260925-WA0005(1).jpg"
+          alt="Likes no Free Fire">
+      </div>
+
+      <!-- CARD -->
+      <div class="card">
+
+        <h2>
+          Adquira seu PASSE
+        </h2>
+
+        <p>
+          Clique no botão abaixo e fale diretamente comigo
+          pelo WhatsApp para realizar seu pedido.
+        </p>
+
+        <div class="price">
+          R$ 5,50
+        </div>
+
+        <a
+          class="buy-button"
+          href="https://wa.me/554796395559?text=Olá!%20Quero%20adquirir%20o%20PASSE."
+          target="_blank"
+          rel="noopener noreferrer">
+          ADQUIRIR AGORA
+        </a>
+
+        <div class="secure">
+          Atendimento direto pelo WhatsApp
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer>
+
+      © 2026 PASSE. Todos os direitos reservados.
+
+      <a
+        class="instagram"
+        href="https://instagram.com/soberana.ofc"
+        target="_blank"
+        rel="noopener noreferrer">
+        Instagram: @soberana.ofc
+      </a>
+
+    </footer>
+
   </div>
-</header>
-
-<main class="hero">
-
-  <div class="tag">
-    ACESSO EXCLUSIVO
-  </div>
-
-  <h1>
-    SEU<br>
-    <span>PASSE.</span>
-  </h1>
-
-  <p class="description">
-    Tenha acesso ao PASSE de forma rápida e simples.
-    Escolha sua opção e fale diretamente comigo.
-  </p>
-
-  <!-- FOTO DO PASSE -->
-  <div class="photo">
-    <img src="1000009466.png" alt="PASSE">
-  </div>
-
-  <!-- LIKES -->
-  <section class="likes-section">
-
-    <div class="likes-title">
-      LIKES
-    </div>
-
-    <div class="likes-subtitle">
-      FF de <span>100 a 220</span> por dia
-    </div>
-
-  </section>
-
-  <!-- FOTO DOS LIKES -->
-  <div class="likes-photo">
-    <img src="1000009468.jpg" alt="Likes no Free Fire">
-  </div>
-
-  <!-- COMPRA -->
-  <div class="card">
-
-    <h2>
-      Adquira seu PASSE
-    </h2>
-
-    <p>
-      Clique no botão abaixo e fale diretamente comigo
-      pelo WhatsApp para realizar seu pedido.
-    </p>
-
-    <div class="price">
-      R$ 5,50
-    </div>
-
-    <a
-      class="buy-button"
-      href="https://wa.me/554796395559?text=Olá!%20Quero%20adquirir%20o%20PASSE."
-      target="_blank"
-      rel="noopener noreferrer">
-      ADQUIRIR AGORA
-    </a>
-
-    <div class="secure">
-      Atendimento direto pelo WhatsApp
-    </div>
-
-  </div>
-
-</main>
-
-<footer>
-  © 2026 PASSE. Todos os direitos reservados.
-  <a
-    class="instagram"
-    href="https://instagram.com/soberana.ofc"
-    target="_blank"
-    rel="noopener noreferrer">
-    Instagram: @soberana.ofc
-  </a>
-</footer>
-
-</div>
 
 </body>
-  </html>
+</html>
